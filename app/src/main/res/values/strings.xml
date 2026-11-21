@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">TanIoT HUD</string>
+    <string name="app_subtitle">Xe Máy Thông Minh &amp; Dẫn Đường HUD</string>
+    <string name="status_connected">ĐÃ KẾT NỐI XE</string>
+    <string name="status_disconnected">CHƯA KẾT NỐI XE</string>
+    <string name="btn_connect">KẾT NỐI ESP32 HUD</string>
+    <string name="btn_disconnect">NGẮT KẾT NỐI</string>
+    <string name="btn_grant_permission">CẤP QUYỀN ĐỌC GOOGLE MAPS</string>
+    <string name="permission_granted">Đã cấp quyền đọc thông báo</string>
+</resources>
