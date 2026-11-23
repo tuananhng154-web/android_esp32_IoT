@@ -67,6 +67,15 @@ public class MapsNotificationListener extends NotificationListenerService {
                     maneuverBitmap = drawableToBitmap(drawable);
                 }
             }
+            if (maneuverBitmap == null && extras.containsKey(Notification.EXTRA_LARGE_ICON)) {
+                Object obj = extras.get(Notification.EXTRA_LARGE_ICON);
+                if (obj instanceof Bitmap) {
+                    maneuverBitmap = (Bitmap) obj;
+                } else if (obj instanceof Icon) {
+                    Drawable d = ((Icon) obj).loadDrawable(this);
+                    if (d != null) maneuverBitmap = drawableToBitmap(d);
+                }
+            }
         } catch (Exception e) {
             Log.e(TAG, "Lỗi đọc icon Google Maps: " + e.getMessage());
         }

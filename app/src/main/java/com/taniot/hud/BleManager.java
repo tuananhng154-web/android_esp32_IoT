@@ -195,7 +195,7 @@ public class BleManager {
         }
     }
 
-    private void notifyLog(String log) {
+    public void notifyLog(String log) {
         if (stateListener != null) {
             mainHandler.post(() -> stateListener.onLog(log));
         }
